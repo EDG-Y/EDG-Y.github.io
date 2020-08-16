@@ -1,1 +1,1 @@
-# VoicePrivacy
+# EDGY
