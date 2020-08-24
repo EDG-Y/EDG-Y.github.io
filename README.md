@@ -1,2 +1,2 @@
 # EDGY
-Welcome to EDGY privacy protection solutions from the edge
+Welcome to EDGY Privacy Protection Solutions from the Edge
