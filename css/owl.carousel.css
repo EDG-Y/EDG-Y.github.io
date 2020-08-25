@@ -4,6 +4,10 @@
  */
 
 /* clearfix */
+.carousel-inner .carousel-item:first-child {
+   display: none;
+ }
+
 .owl-carousel .owl-wrapper:after {
 	content: ".";
 	display: block;
