@@ -62,39 +62,72 @@
 		<div class="container content">	
 			<div class="card-deck">
   <div class="card">
-  <img src="img/3_ccsw.pdf" class="card-img-top img-thumbnail" alt="...">
+  <img src="img/2_ppml.pdf" class="card-img-top img-thumbnail" alt="...">
   <div class="card-body">
-    <h5 class="card-title text-center" style="padding: 15px">Privacy-preserving Voice Analysis via Disentangled Representations</h5>
+    <h5 class="card-title text-center" style="padding: 15px">Emotionless: Privacy-Preserving Speech Analysis for Voice Assistants</h5>
     <p class="card-text text-justify" style="padding: 15px">
-           Voice User Interfaces (VUIs) are increasingly popular and built into smartphones, home assistants, and Internet of Things (IoT) devices. 
-	   Despite offering an always-on convenient user experience, VUIs raise new security and privacy concerns for their users. 
-	   In this paper, we focus on attribute inference attacks in the speech domain, demonstrating the potential for an attacker to accurately infer 
-	   a target user's sensitive and private attributes (e.g. their emotion, sex, or health status) from deep acoustic models. 
-	   <a href="#demo" class="nav-toggle" data-toggle="collapse">Read More</a>
-	   <div id="demo" class="collapse text-justify" style="padding: 15px">
-	   To defend against this class of attacks, we design, implement, and evaluate a user-configurable, privacy-aware framework for optimizing 
-	   speech-related data sharing mechanisms. Our objective is to enable primary tasks such as speech recognition and user identification, 
-	   while removing sensitive attributes in the raw speech data before sharing it with a cloud service provider. 
-	   We leverage disentangled representation learning to explicitly learn independent factors in the raw data. Based on a user's preferences, 
-	   a supervision signal informs the filtering out of invariant factors while retaining the factors reflected in the selected preference. 
-	   Our experimental evaluation over five datasets shows that the proposed framework can effectively defend against attribute inference attacks 
-	   by reducing their success rates to approximately that of guessing at random, while maintaining accuracy in excess of 99% for the tasks of interest. 
-	   We conclude that negotiable privacy settings enabled by disentangled representations can bring new opportunities for privacy-preserving applications.
+           Voice-enabled interactions provide more human-like experiences in many popular IoT systems. 
+	    Cloud-based speech analysis services extract useful information from voice input using speech recognition techniques. 
+	    The voice signal is a rich resource that discloses several possible states of a speaker, such as emotional  state, confidence and stress levels, 
+	    physical condition, age, gender, and personal traits. 
+	    Service providers can build a very accurate profile of a user's demographic category, personal preferences, and may compromise privacy. 
+	   <a href="#paper1" class="nav-toggle" data-toggle="collapse">Read More</a>
+	   <div id="paper1" class="collapse text-justify" style="padding: 15px">
+	   To address this problem, a privacy-preserving intermediate layer between users and cloud services is proposed to sanitize the voice input. 
+	   It aims to maintain utility while preserving user privacy. It achieves this by collecting real time speech data and analyzes the signal to 
+	   ensure privacy protection prior to sharing of this data with services providers. Precisely, the sensitive representations are extracted 
+	   from the raw signal by using transformation functions and then wrapped it via  voice conversion technology. Experimental evaluation based 
+           on emotion recognition to assess the efficacy of the proposed method shows that identification of sensitive emotional state of the speaker 
+           is reduced by 96%.
 	  </div>
 	  
 	  </p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">ACM CCS 2020: Cloud Computing Security Workshop (CCSW)</li>
-    <li class="list-group-item">#Speech Analysis,#Voice Privacy,#Disentangled Representation</li>
+    <li class="list-group-item">ACM CCS 2019: Privacy Preserving Machine Learning Workshop (PPML)</li>
+    <li class="list-group-item">#Voice Synthesis,#Voice Privacy,#Emotion</li>
     <!--<li class="list-group-item">BibTex: </li>-->
   </ul>
   <div class="card-body text-center">
     <a href="https://arxiv.org/abs/2007.15064" class="card-link">Paper</a>
-    <a href="https://github.com/RanyaJumah/EDGY" class="card-link">Code</a>
-    <a href="https://www.youtube.com/watch?v=hQAcK_Ynun0&t=3s" class="card-link">Audio Snips</a>
+    <a href="https://github.com/RanyaJumah/Emotionless_Privacy_Preserving_Speech_Analysis" class="card-link">Code</a>
+    <!--<a href="https://www.youtube.com/watch?v=hQAcK_Ynun0&t=3s" class="card-link">Audio Snips</a>-->
   </div>
-  <div class="card-footer text-muted text-center">2020</div>
+  <div class="card-footer text-muted text-center">2019</div>
+</div>
+				
+  <div class="card">
+  <img src="img/1_sensys.png" class="card-img-top img-thumbnail" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center" style="padding: 15px">Emotion Filtering at the Edge</h5>
+    <p class="card-text text-justify" style="padding: 15px">
+           Voice controlled devices and services have become very popular in the consumer IoT. Cloud-based speech analysis services extract 
+	   information from voice inputs using speech recognition techniques. Services providers can thus build very accurate profiles of users' 
+	   demographic categories, personal preferences, emotional states, etc., and may therefore significantly compromise their privacy. 
+	   To address this problem, we have developed a privacy-preserving intermediate layer between users and cloud services to sanitize 
+	   voice input directly at edge devices. 
+	   <a href="#paper2" class="nav-toggle" data-toggle="collapse">Read More</a>
+	   <div id="paper2" class="collapse text-justify" style="padding: 15px">
+	   We use CycleGAN-based speech conversion to remove sensitive information from raw voice input signals before regenerating neutralized signals 
+           for forwarding. We implement and evaluate our emotion filtering approach using a relatively cheap Raspberry Pi 4, and show that performance 
+           accuracy is not compromised at the edge. Signals generated at the edge are shown to differ only slightly (0.16%) from cloud-based approaches 
+	   for speech recognition. Experimental evaluation of generated signals show that identification of the emotional state of a speaker can be 
+           reduced by 91%.
+	  </div>
+	  
+	  </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">ACM SenSys 2019: Machine Learning on Edge in Sensor Systems Workshop (Sensys-ML)</li>
+    <li class="list-group-item">#Embedded systems,#Voice Privacy,#Emotion</li>
+    <!--<li class="list-group-item">BibTex: </li>-->
+  </ul>
+  <div class="card-body text-center">
+    <a href="https://dl.acm.org/doi/abs/10.1145/3362743.3362960" class="card-link">Paper</a>
+    <a href="https://github.com/RanyaJumah/Emotionless_Privacy_Preserving_Speech_Analysis" class="card-link">Code</a>
+    <!--<a href="https://www.youtube.com/watch?v=hQAcK_Ynun0&t=3s" class="card-link">Audio Snips</a>-->
+  </div>
+  <div class="card-footer text-muted text-center">2019</div>
 </div>
 				
   <div class="card">
@@ -122,43 +155,7 @@
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">ACM CCS 2020: Cloud Computing Security Workshop (CCSW)</li>
-    <li class="list-group-item">#Speech Analysis,#Voice Privacy,#Disentangled Representation</li>
-    <!--<li class="list-group-item">BibTex: </li>-->
-  </ul>
-  <div class="card-body text-center">
-    <a href="https://arxiv.org/abs/2007.15064" class="card-link">Paper</a>
-    <a href="https://github.com/RanyaJumah/EDGY" class="card-link">Code</a>
-    <a href="https://www.youtube.com/watch?v=hQAcK_Ynun0&t=3s" class="card-link">Audio Snips</a>
-  </div>
-  <div class="card-footer text-muted text-center">2020</div>
-</div>
-				
-  <div class="card">
-  <img src="img/3_ccsw.pdf" class="card-img-top img-thumbnail" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center" style="padding: 15px">Privacy-preserving Voice Analysis via Disentangled Representations</h5>
-    <p class="card-text text-justify" style="padding: 15px">
-           Voice User Interfaces (VUIs) are increasingly popular and built into smartphones, home assistants, and Internet of Things (IoT) devices. 
-	   Despite offering an always-on convenient user experience, VUIs raise new security and privacy concerns for their users. 
-	   In this paper, we focus on attribute inference attacks in the speech domain, demonstrating the potential for an attacker to accurately infer 
-	   a target user's sensitive and private attributes (e.g. their emotion, sex, or health status) from deep acoustic models. 
-	   <a href="#demo" class="nav-toggle" data-toggle="collapse">Read More</a>
-	   <div id="demo" class="collapse text-justify" style="padding: 15px">
-	   To defend against this class of attacks, we design, implement, and evaluate a user-configurable, privacy-aware framework for optimizing 
-	   speech-related data sharing mechanisms. Our objective is to enable primary tasks such as speech recognition and user identification, 
-	   while removing sensitive attributes in the raw speech data before sharing it with a cloud service provider. 
-	   We leverage disentangled representation learning to explicitly learn independent factors in the raw data. Based on a user's preferences, 
-	   a supervision signal informs the filtering out of invariant factors while retaining the factors reflected in the selected preference. 
-	   Our experimental evaluation over five datasets shows that the proposed framework can effectively defend against attribute inference attacks 
-	   by reducing their success rates to approximately that of guessing at random, while maintaining accuracy in excess of 99% for the tasks of interest. 
-	   We conclude that negotiable privacy settings enabled by disentangled representations can bring new opportunities for privacy-preserving applications.
-	  </div>
-	  
-	  </p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">ACM CCS 2020: Cloud Computing Security Workshop (CCSW)</li>
-    <li class="list-group-item">#Speech Analysis,#Voice Privacy,#Disentangled Representation</li>
+    <li class="list-group-item">#Voice Analysis,#Voice Privacy/Security,#Disentangled Representation</li>
     <!--<li class="list-group-item">BibTex: </li>-->
   </ul>
   <div class="card-body text-center">
