@@ -48,8 +48,8 @@ zoom: 1;}
 .carousel li {margin-right: 5px}
 
 /* Caption style */
-
-.flex-caption { background: rgba(0,0,0,.9); margin-left:5px;bottom:5px; position:absolute;padding:18px; z-index:99;}
+/*background: rgba(0,0,0,.9); */
+.flex-caption { margin-left:5px;bottom:5px; position:absolute;padding:18px; z-index:99;}
 .flex-caption p{ font-size: 14px !important; line-height: 22px; 
 font-weight:300; color: #fff }
 .flex-caption h2, .flex-caption h4 {
